@@ -77,6 +77,14 @@ m = number of restrictions
 
 k = number of independent variables
 
+#### One-Way ANOVA when there're three or more separate, non-overlapping groups or data sets that you want to compare. It's similar to an independent-samples t-test, just with more group
+
+#### Within-groups (Repeated measures) ANOVA when you've eparate data sets that are provided by the same people over time . It's similar to a dependent-samples t-test, just with more data sets. This is most often used when you are doing a longitudinal study that tracks the same people across time.
+
+
+#### Factorial ANOVA is used when You are interested in the interaction between two or more variables/factors/dimensions. Essentially, you are comparing the means of the various combinations of factors.
+
+One thing that is important to note about ANOVAs is that because there are more than two groups that are being compared, follow-up (or post-hoc) tests are often required to further interpret the data.
 
 # Non parametric statistical test are used when data is not normally distributed.
 
