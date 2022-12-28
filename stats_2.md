@@ -1,4 +1,4 @@
-Mean, Median,Mode,Skew
+Mean, Median,Mode
 --------------------------------------------
 
 For a nominal level(that can't be ordered), you can only use the mode to find the most frequent value. But avoid using it for Category(might be used for some cases),Ratio as repeating values are rare
@@ -8,6 +8,12 @@ For an ordinal level or ranked data, you can also use the median to find the val
 For interval or ratio levels, in addition to the mode and median, you can use the mean to find the average value.
 Outlier will effect on the mean
 
+
+# Skew
+----------
+
+skewness is a degree of asymmetry observed in a probability distribution that deviates from the symmetrical normal distribution (bell
+curve) in a given set of data.
 
 Normal distribution - Mean, Median, Mode all are same
 
@@ -24,8 +30,23 @@ and the central tendency of your dataset is towards the higher end of possible s
 
 In a negatively skewed distribution, mean < median < mode.
 
-# Z-test
+### perarson's 2nd coefficient : Mean - Mode ~ 3*(Mean - Median) , it's immune to high-low value of  mode
 
+#### If the skewness is between -0.5 & 0.5, the data are nearly symmetrical.
+
+#### If the skewness is between -1 & -0.5 (negative skewed) or between 0.5 & 1(positive skewed), the data are slightly skewed.
+
+### If the skewness is lower than -1 (negative skewed) or greater than 1 (positive skewed), the data are extremely skewed.
+
+
+# Kurtosis
+------------
+
+Kurtosis refers to the degree of presence of outliers in the distribution.
+
+
+# Z-test
+---------------
 A z-test is a statistical test used to determine whether two population means are different when the variances are known and the sample size is large. In z-test mean of the population is compared.
 
 Ho: Sample mean is same as the population mean(Null hypothesis)
