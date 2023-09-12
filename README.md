@@ -1,5 +1,7 @@
 # Notes
 
-ML 
-Deep Learning
-NLP 
+  ML 
+  
+  Deep Learning
+  
+  NLP 
