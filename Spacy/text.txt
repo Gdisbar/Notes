@@ -1,0 +1,16 @@
+[Purpose] Warfarin (WF) is widely used for the prevention of thrombosis, but its effect varies greatly among individuals, and it is often difficult to determine the dosage due to interactions with concomitant drugs.
+ For the purpose of proper use of WF, we measure the blood concentration and collect information on interactions.
+ In this presentation, we monitored the anticoagulant ability of WF in combination with benzbromarone and amiodarone, measured the blood concentration of WF at the same time, and discussed the mechanism of interaction based on the results.
+ [Methods] Blood concentration of WF was measured by high-performance liquid chromatography, and the time of blood sampling was before taking the drug in the morning.
+ [Case] ​​<Case 1> A 70-year-old woman.
+
+ WF administration was started for cerebral infarction and left atrial thrombus.
+ Carbamazepine was used for convulsive seizures as a sequela, and benzbromarone was also used because the uric acid level was high during the WF dose increase adjustment.
+ <<Case 2>> A 63-year-old male.
+ WF administration was started for hypertrophic cardiomyopathy and atrial fibrillation.
+Amiodarone was administered concomitantly because nonsustained ventricular tachycardia was observed during the treatment course.
+
+[Results and discussion] In all cases, marked changes in blood concentration and anticoagulant ability were observed due to concomitant use.
+ In case 1, the variation in the blood concentration of S-form WF was particularly remarkable, whereas in case 2, no stereoselective behavior was observed, suggesting that there is a mechanism of expression of the interaction.
+ The former interaction is an interaction mediated by cytochrome P450 (CYP) 2C9, and its association with polymorphism is noted.
+ In daily clinical practice, the frequency of WF-mediated interaction is expected to be high, and it is necessary to pay attention to changes in blood concentration measurement and anticoagulant activity.
