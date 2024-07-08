@@ -77,7 +77,7 @@ P7* 1 0 0 1
 P8 0 0 0 1
 P9* 1 0 0 1
 P10 0 0 0 0
-Total: 12/1
+Total: 12/2
 Overs: 1
 
 Over 2:
@@ -102,7 +102,7 @@ Result: Team 1 won the match by 4 runs
 
 class Ball:
     def __init__(self, run):
-        self.bowler = None  # No direct equivalent in Python translation
+        # self.bowler = None  # 
         self.run = run
 
 class Over:
