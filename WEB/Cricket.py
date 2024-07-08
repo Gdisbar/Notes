@@ -1,236 +1,364 @@
-# class BatsmanStats(object):
-# 	def __init__(self,name):
-# 		self.name = name
-# 		self.score = 0
-# 		self.Four = 0
-# 		self.Six = 0
-# 		self.TotalBalls = 0
-# 		self.hasPlayed = 0
+"""
 
+Problem:
+Design a cricket scorecard that will show the score for a team along with score of each player.
 
-# class PlayInnings(object):
-# 	def __init__(self,noOfOvers,team,teamOut,TotalRun,TotalWC,teamName,TotalOver):
-# 		self.noOfOvers = noOfOvers
-# 		self.team = team
-# 		self.teamOut = teamOut
-# 		self.TotalRun = TotalRun
-# 		self.TotalWC = TotalWC
-# 		self.teamName  = teamName
-# 		self.TotalOver = TotalOver
-			
+You will be given the number of players in each team, the number of overs and their batting order as input. Then, we can input overs ball by ball with the runs scored on that ball (could be wide, no ball or a wicket as well).
+You are expected to print individual scores, number of balls faced, number of 4s, number of 6s for all the players from the batting side at the end of every over. You also need to print total score, total wickets. Essentially, you need to keep a track of all the players, strike changes (at the end of the over or after taking singles or 3s) and maintain their scores, also keep track of extra bowls that are being bowled (like wides or no balls). You also need to print which team won the match at the end.
+This is the bare minimum solution which is expected for the problem. You can add some more features once you are done with these, like maintaining a bowlers record (total overs bowled, runs conceded, wickets taken, maiden overs, dot balls, economy, etc.). Total team extras, batsman strike rates, etc. can be added too. But these are "good to have" features, please try to complete the bare minimum first.
 
-# 	# @staticmethod
-# 	def printScore(self,striker,nonStriker,overNo):
-# 		# print(f"After over {overNo} ")
-# 		print(f"Scorecard for Team {self.teamName}:")
-# 		print("Player Name Score 4s 6s Balls")
-# 		for member in self.teamOut:
-# 			# if member.name in [striker.name,nonStriker.name]: continue
-# 			print(f"{member.name} {member.score} {member.Four} {member.Six} {member.TotalBalls}")
+Make sure your code is readable and maintainable and preferably object oriented. It should be modular and extensible, to add new features if needed.
 
-# 		# if striker.name not None:
-# 		if striker!=None:
-# 			print(f"{striker.name}* {striker.score} {striker.Four} {striker.Six} {striker.TotalBalls}")
-# 		print(f"{nonStriker.name}* {nonStriker.score} {nonStriker.Four} {nonStriker.Six} {nonStriker.TotalBalls}")
+Sample input and output:
+No. of players for each team: 5
+No. of overs: 2
+Batting Order for team 1:
+P1
+P2
+P3
+P4
+P5
+Over 1:
+1
+1
+1
+1
+1
+2
 
-# 		for member in self.team:
-# 			print(f"{member.name} {member.score} {member.Four} {member.Six} {member.TotalBalls}")
-		
+Scorecard for Team 1:
+Player Name Score 4s 6s Balls
+P1* 3 0 0 3
+P2* 4 0 0 3
+P3 0 0 0 0
+P4 0 0 0 0
+P5 0 0 0 0
+Total: 7/0
+Overs: 1
 
-# 		print(f"Total: {self.TotalRun}/{self.TotalWC}")
-# 		overs = self.TotalOver//6
-# 		leftOver = self.TotalOver - overs
-# 		if leftOver==0:
-# 			print(f"Overs: {overs}")
-# 		else:
-# 			print(f"Overs: {overs}.{leftOver}")
+Over 2:
+W
+4
+4
+Wd
+W
+1
+6
 
+Scorecard for Team 1:
+Player Name Score 4s 6s Balls
+P1 3 0 0 4
+P2* 10 0 1 4
+P3 8 2 0 3
+P4* 1 0 0 1
+P5 0 0 0 0
+Total: 23/2
+Overs: 2
 
-# 	def PlayCurrentOver(self,striker,nonStriker,overNo):
-# 		ballCount = 6
-# 		while ballCount>0:
-# 			ball = input()
-# 			if ball=='Wd':
-# 				# striker.score+=1 ## wd run goes to tam not strikr
-# 				striker.TotalBalls+=1  
-# 				# ballCount+=1 ## already itrated over the loop 
-# 				self.TotalRun+=1
-# 				print(f"After Ball : {ball} striker : {striker.name} nonStriker : {nonStriker.name}")
-# 				continue
-# 			else:
-# 				ballCount-=1
-# 				striker.TotalBalls+=1 ## out is also a bllfaced by striker
-# 				self.TotalOver+=1
-# 				if ball=='W':
-# 					self.TotalWC+=1
-# 					self.teamOut.append(striker)
-# 					if self.team:
-# 						striker = self.team.pop(0)
-# 						striker.hasPlayed = 1
-# 						# striker,nonStriker = nonStriker,striker
-# 					else:
-# 						striker = None
-# 						break
-# 					print(f"After Ball : {ball} striker : {striker.name} nonStriker : {nonStriker.name}")
-# 				else:
-					
-# 					ball = int(ball)
-# 					if ball in [1,3]:
-# 						striker.score+=ball 
-# 						self.TotalRun+=ball
-# 						striker,nonStriker = nonStriker,striker
-# 					elif ball in [0,2,4,6]:
-# 						striker.score+=ball 
-# 						self.TotalRun+=ball
-# 						if ball==4:
-# 							striker.Four+=1
-# 						if ball==6:
-# 							striker.Six+=1
-# 					print(f"After Ball : {ball} striker : {striker.name} nonStriker : {nonStriker.name}")
-						
-# 			# if len(self.team) < 2:
-# 			# 	break
-		
-# 		self.printScore(striker,nonStriker,overNo)
-# 		striker,nonStriker = nonStriker,striker
-# 		# if isinstance(ballScore[-1],int) and int(ballScore[-1])%2==0:
-# 		# 	striker,nonStriker = nonStriker,striker
-# 		return striker, nonStriker
+Batting Order for team 2:
+P6
+P7
+P8
+P9
+P10
 
-# 	def StartGame(self):
-# 		## assuming team has at least 2 players
-# 		striker = self.team.pop(0)
-# 		nonStriker = self.team.pop(0)
-# 		striker.hasPlayed = 1
-# 		nonStriker.hasPlayed = 1
-# 		print(f"Opener(striker) : {striker.name} Opener(nonStriker) : {nonStriker.name}")
-# 		for i in range(self.noOfOvers):
-# 			if self.TotalWC == len(self.team)-1:
-# 				break
-# 			print(f"Over {i+1}:")
-# 			striker,nonStriker = self.PlayCurrentOver(striker,nonStriker,i)
-# 		return self.TotalRun
+Over 1:
+4
+6
+W
+W
+1
+1
 
-# noOfPlayers = int(input("No. of players for each team: "))
-# noOfOvers = int(input("No. of overs:"))
+Scorecard for Team 2:
+Player Name Score 4s 6s Balls
+P6 10 1 1 3
+P7* 1 0 0 1
+P8 0 0 0 1
+P9* 1 0 0 1
+P10 0 0 0 0
+Total: 12/1
+Overs: 1
 
+Over 2:
+6
+1
+W
+W
 
-# print("Batting Order for team 1:")
-# team1 = list()
-# team1_out = list()
-# for i in range(noOfPlayers):
-# 	name = input()
-# 	x = BatsmanStats(name)
-# 	team1.append(x)
+Scorecard for Team 2:
+Player Name Score 4s 6s Balls
+P6 10 1 1 2
+P7* 8 0 1 3
+P8 0 0 0 1
+P9 1 0 0 2
+P10 0 0 0 1
+Total: 19/4
+Overs: 1.4
 
-# sobj_1 = PlayInnings(noOfOvers,team1,team1_out,0,0,"team 1",0) 
-# team1_TotalRun = sobj_1.StartGame()
+Result: Team 1 won the match by 4 runs
 
-# print("Batting Order for team 2:")
-# team2 = list()
-# team2_out = list()
-# for i in range(noOfPlayers):
-# 	name = input()
-# 	x = BatsmanStats(name)
-# 	team2.append(x)
+"""
 
-# sobj_2 = PlayInnings(noOfOvers,team2,team2_out,0,0,"team 2",0) 
-# team2_TotalRun = sobj_2.StartGame()
+class Ball:
+    def __init__(self, run):
+        self.bowler = None  # No direct equivalent in Python translation
+        self.run = run
 
-# if team1_TotalRun>team2_TotalRun:
-# 	print("Team 1 Wins")
-# elif team1_TotalRun<team2_TotalRun:
-# 	print("Team 2 Wins")
-# else:
-# 	print("It's a Draw")
+class Over:
+    def __init__(self):
+        self.balls = []
 
-
-class BatsmanStats:
+class Player:
     def __init__(self, name):
         self.name = name
+        self.six = 0
+        self.four = 0
+        self.wide = 0
+        self.total_balls = 0
         self.score = 0
-        self.fours = 0
-        self.sixes = 0
-        self.balls_faced = 0
+        self.is_out = False
+        self.team_id = 0
+
+    def update_score(self, run):
+        if run == 4:
+            self.four += 1
+        elif run == 6:
+            self.six += 1
+
+        self.score += run
+        self.total_balls += 1
+
+    def set_out(self):
+        self.is_out = True
+        self.total_balls += 1
 
 
-class ScoreDisplay:
-    def print_scorecard(self, team, team_out, total_runs, total_wickets, total_overs):
-        print(f"Scorecard for Team {team.team_name}:")
-        print("Player Name Score 4s 6s Balls")
-        for member in team_out:
-            print(f"{member.name} {member.score} {member.fours} {member.sixes} {member.balls_faced}")
-        for member in team.players:
-            print(f"{member.name} {member.score} {member.fours} {member.sixes} {member.balls_faced}")
-        print(f"Total: {total_runs}/{total_wickets}")
-        overs = total_overs // 6
-        left_over = total_overs % 6
-        print(f"Overs: {overs}.{left_over}")
+class ScoreCard:
+    def __init__(self):
+        self.player_details = []
+        self.total = ""
+        self.overs = ""
 
 
-class CricketGame:
-    def __init__(self, innings):
-        self.innings = innings
+class Team:
+    def __init__(self, team_id):
+        self.id = team_id
+        self.first_player = None
+        self.second_player = None
+        self.current_striker = None
+        self.players_map = {}
+        self.wide_balls = 0
 
-    def play_game(self):
-        total_runs, total_wickets, total_overs = self.innings.play()
-        return total_runs, total_wickets, total_overs
+    def add_player(self, name):
+        if name in self.players_map:
+            return
+        self.players_map[name] = Player(name)
+
+        if self.first_player is None:
+            self.first_player = name
+            self.current_striker = self.first_player
+        elif self.second_player is None:
+            self.second_player = name
+
+    def play_ball(self, ball):
+        if self.first_player is None or self.second_player is None:
+            return False
+
+        if ball.run == "Wd":
+            self.wide_balls += 1
+            return True
+        if ball.run == "W":
+            self.players_map[self.current_striker].set_out()
+            return self.find_next_player(self.current_striker)
+        
+        run_int = int(ball.run)
+        self.players_map[self.current_striker].update_score(run_int)
+        if run_int % 2 != 0:
+            self.strike_change()
+        return True
+
+    def total_overs(self):
+        total_balls = sum(player.total_balls for player in self.players_map.values())
+        complete_overs = total_balls // 6
+        partial_overs = total_balls % 6
+        if partial_overs > 0:
+            return f"{complete_overs}.{partial_overs}"
+        return str(complete_overs)
+
+    def total_score(self):
+        return sum(player.score for player in self.players_map.values()) + self.wide_balls
+
+    def total_wickets(self):
+        return sum(1 for player in self.players_map.values() if player.is_out)
+
+    def strike_change(self):
+        if self.current_striker == self.first_player:
+            self.current_striker = self.second_player
+        else:
+            self.current_striker = self.first_player
+
+    def find_next_player(self, current_out):
+        for player in self.players_map.values():
+            if not player.is_out and player.name != self.first_player and player.name != self.second_player:
+                if current_out == self.first_player:
+                    self.first_player = player.name
+                else:
+                    self.second_player = player.name
+
+                self.current_striker = player.name
+                return True
+
+        if current_out == self.first_player:
+            self.first_player = None
+        else:
+            self.second_player = None
+        return False
 
 
-class CricketInnings:
-    def __init__(self, team, no_of_overs):
-        self.team = team
-        self.no_of_overs = no_of_overs
-        self.total_runs = 0
-        self.total_wickets = 0
-        self.total_overs = 0
-        self.team_out = []
+class Game:
+    def __init__(self):
+        self.team_one = None
+        self.team_two = None
 
-    def play(self):
-        striker, non_striker = self.team.pop(0), self.team.pop(0)
-        for i in range(self.no_of_overs):
-            if len(self.team) < 2:
-                break
-            print(f"Over {i + 1}:")
-            striker, non_striker = self.play_current_over(striker, non_striker)
-        return self.total_runs, self.total_wickets, self.total_overs
+    def add_team(self, team_id):
+        if self.team_one and self.team_two:
+            return False
 
-    def play_current_over(self, striker, non_striker):
-        ball_count = 6
-        while ball_count > 0:
-            ball = input()
-            if ball == 'Wd':
-                self.total_runs += 1
-            elif ball == 'W':
-                self.total_wickets += 1
-                self.team_out.append(striker)
-                if self.team:
-                    striker = self.team.pop(0)
-            else:
-                ball = int(ball)
-                self.total_runs += ball
-                striker.score += ball
-                striker.balls_faced += 1
-                if ball == 4:
-                    striker.fours += 1
-                elif ball == 6:
-                    striker.sixes += 1
-            ball_count -= 1
-            self.total_overs += 1
-            striker, non_striker = non_striker, striker
-        return striker, non_striker
+        if (self.team_one and self.team_one.id == team_id) or (self.team_two and self.team_two.id == team_id):
+            return False
 
+        team = Team(team_id)
+        if self.team_one is None:
+            self.team_one = team
+        elif self.team_two is None:
+            self.team_two = team
+        return True
 
-# Main program
-no_of_players = int(input("No. of players for each team: "))
-no_of_overs = int(input("No. of overs: "))
+    def add_player(self, player_name, team_id):
+        team = self.get_team_from_id(team_id)
+        if not team:
+            return False
+        team.add_player(player_name)
+        return True
 
-print("Batting Order for team 1:")
-team1 = [BatsmanStats(input()) for _ in range(no_of_players)]
-innings1 = CricketInnings(team1, no_of_overs)
+    def play_over(self, team_id, over):
+        team = self.get_team_from_id(team_id)
+        if not team:
+            return False
 
-game = CricketGame(innings1)
-total_runs, total_wickets, total_overs = game.play_game()
+        for ball in over.balls:
+            team.play_ball(Ball(ball))
 
-score_display = ScoreDisplay()
-score_display.print_scorecard(innings1.team, innings1.team_out, total_runs, total_wickets, total_overs)
+        if len(over.balls) >= 6:
+            team.strike_change()
+        return True
+
+    def scorecard(self, team_id):
+        team = self.get_team_from_id(team_id)
+        if not team:
+            return None
+
+        score_card = ScoreCard()
+        score_card.player_details = self.player_scorecard(team)
+        score_card.overs = team.total_overs()
+        score_card.total = f"{team.total_score()}/{team.total_wickets()}"
+        return score_card
+
+    def final_result(self):
+        if not self.team_one or not self.team_two:
+            return None
+
+        team_one_score = self.team_one.total_score()
+        team_two_score = self.team_two.total_score()
+
+        if team_one_score > team_two_score:
+            return f"Team 1 won the match by {team_one_score - team_two_score} runs"
+        elif team_two_score > team_one_score:
+            return f"Team 2 won the match by {team_two_score - team_one_score} runs"
+        else:
+            return "Match draw"
+
+    def get_team_from_id(self, team_id):
+        if self.team_one and self.team_one.id == team_id:
+            return self.team_one
+        if self.team_two and self.team_two.id == team_id:
+            return self.team_two
+        return None
+
+    @staticmethod
+    def player_scorecard(team):
+        player_scorecard = ["Player_Name Score 4s 6s Balls"]
+
+        for player in team.players_map.values():
+            player_name = player.name
+            if player_name == team.first_player or player_name == team.second_player:
+                player_name += "*"
+            score = str(player.score)
+            fours = str(player.four)
+            sixes = str(player.six)
+            balls = str(player.total_balls)
+            player_detail = f"{player_name} {score} {fours} {sixes} {balls}"
+            player_scorecard.append(player_detail)
+
+        return player_scorecard
+
+def print_score(game, team_id):
+    score_card = game.scorecard(team_id)
+    if score_card:
+        for player_detail in score_card.player_details:
+            print(player_detail)
+        print(score_card.total)
+        print(score_card.overs)
+    else:
+        print(f"No scorecard available for Team {team_id}")
+
+if __name__ == "__main__":
+    game = Game()
+
+    game.add_team(1)
+    game.add_player("P1", 1)
+    game.add_player("P2", 1)
+    game.add_player("P3", 1)
+    game.add_player("P4", 1)
+    game.add_player("P5", 1)
+
+    over = Over()
+    over.balls.extend(["1", "1", "1", "1", "1", "2"])
+    game.play_over(1, over)
+
+    print_score(game, 1)
+
+    over = Over()
+    over.balls.extend(["W", "4", "4", "Wd", "W", "1", "6"])
+    game.play_over(1, over)
+
+    print_score(game, 1)
+
+    game.add_team(2)
+    game.add_player("P6", 2)
+    game.add_player("P7", 2)
+    game.add_player("P8", 2)
+    game.add_player("P9", 2)
+    game.add_player("P10", 2)
+
+    over = Over()
+    over.balls.extend(["4", "6", "W", "W", "1", "1"])
+    game.play_over(2, over)
+
+    print_score(game, 2)
+
+    over = Over()
+    over.balls.extend(["6", "1", "W", "W"])
+    game.play_over(2, over)
+
+    print_score(game, 2)
+    print(game.final_result())
+
+def print_score(game, team_id):
+    score_card = game.scorecard(team_id)
+    for player_detail in score_card.player_details:
+        print(player_detail)
+    print(score_card.total)
+    print(score_card.overs)
+
