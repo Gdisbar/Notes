@@ -27,3 +27,17 @@ pd.set_option('display.max_rows', None)
 import os
 from dotenv import load_dotenv
 load_dotenv()
+
+from google.colab import userdata
+import os
+# Defined in the secrets tab in Google Colab
+os.environ["HF_TOKEN"] = userdata.get('HF_TOKEN')
+
+
+!pip install -q colab-xterm
+%load_ext colabxterm
+
+%xterm -> inside xterm curl https://ollama.ai/install.sh | sh
+ollama serve &  ollama pull llama --> start service
+!ollama list
+!ollama pull llama
