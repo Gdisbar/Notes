@@ -35,19 +35,21 @@
 
 [LLM from scratch](https://github.com/rasbt/LLMs-from-scratch)	
 
+[LLM+GenAI](https://github.com/Vasanthengineer4949/NLP-Projects-NHV)
+
 [llama3 from scratch](https://github.com/naklecha/llama3-from-scratch)
 
 [Adapter learning](https://github.com/calpt/awesome-adapter-resources)
 
 [Prompt Engineering](https://github.com/PromtEngineer/YoutTube-Tutorial)		
 
-[GenAI](https://github.com/sunnysavita10/Generative-AI-Indepth-Basic-to-Advance)
+[LLM+GenAI](https://github.com/sunnysavita10/Generative-AI-Indepth-Basic-to-Advance)
 
 [LangChain-FastAPI](https://github.com/Coding-Crashkurse/Advanced-LangChain-with-FastAPI)
 
 [Trelis Research](https://github.com/TrelisResearch/install-guides?tab=readme-ov-file)
 
-[MLOps](https://github.com/olonok69/LLM_Notebooks/blob/main/mlflow/mlflow_transformers_fine_tuning.ipynb}
+[MLOps](https://github.com/olonok69/LLM_Notebooks/blob/main/mlflow/mlflow_transformers_fine_tuning.ipynb)
 
-[vLLM] (https://github.com/olonok69/LLM_Notebooks/blob/main/LLMOps/vLLM/vllm.ipynb)
+[vLLM](https://github.com/olonok69/LLM_Notebooks/blob/main/LLMOps/vLLM/vllm.ipynb)
 
