@@ -26,6 +26,6 @@
 
 [LangChain-FastAPI](https://github.com/Coding-Crashkurse/Advanced-LangChain-with-FastAPI)
 
-
+[Trelis Research](https://github.com/TrelisResearch/install-guides?tab=readme-ov-file)
 
 
