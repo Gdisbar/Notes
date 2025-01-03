@@ -12,6 +12,8 @@
 
 [LangChain](https://blog.futuresmart.ai/building-a-production-ready-rag-chatbot-with-fastapi-and-langchain)
 
+[Quantization](https://newsletter.maartengrootendorst.com/p/which-quantization-method-is-right)
+
 ## YouTube
 
 [Building Production RAG](https://www.youtube.com/watch?v=dI_TmTW9S4c)
@@ -21,6 +23,10 @@
 [DataStream with LangChain + FastAPI](https://www.youtube.com/watch?v=Gn54EbU9mRg)
 
 [Build & Deploy AI ChatBot](https://www.youtube.com/watch?v=KyQKTJhSIak)
+
+[Knowledge Graph](https://www.youtube.com/watch?app=desktop&v=yNCI3DC3tLg)
+
+
 
 
 ## Github
@@ -41,4 +47,7 @@
 
 [Trelis Research](https://github.com/TrelisResearch/install-guides?tab=readme-ov-file)
 
+[MLOps](https://github.com/olonok69/LLM_Notebooks/blob/main/mlflow/mlflow_transformers_fine_tuning.ipynb}
+
+[vLLM](https://github.com/olonok69/LLM_Notebooks/blob/main/LLMOps/vLLM/vllm.ipynb)
 
