@@ -10,6 +10,19 @@
 
 [RHLF & it's alternate](https://magazine.sebastianraschka.com/p/llm-training-rlhf-and-its-alternatives)
 
+[LangChain](https://blog.futuresmart.ai/building-a-production-ready-rag-chatbot-with-fastapi-and-langchain)
+
+## YouTube
+
+[Building Production RAG](https://www.youtube.com/watch?v=dI_TmTW9S4c)
+
+[LangChain vs LangGraph](https://www.youtube.com/watch?v=bvMX-Zlfv68)
+
+[DataStream with LangChain + FastAPI](https://www.youtube.com/watch?v=Gn54EbU9mRg)
+
+[Build & Deploy AI ChatBot](https://www.youtube.com/watch?v=KyQKTJhSIak)
+
+
 ## Github
 
 [LLM fine tuning](https://github.com/rasbt/LLM-finetuning-scripts/tree/main)	
