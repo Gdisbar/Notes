@@ -21,3 +21,11 @@
 [Adapter learning](https://github.com/calpt/awesome-adapter-resources)
 
 [Prompt Engineering](https://github.com/PromtEngineer/YoutTube-Tutorial)		
+
+[GenAI](https://github.com/sunnysavita10/Generative-AI-Indepth-Basic-to-Advance)
+
+[LangChain-FastAPI](https://github.com/Coding-Crashkurse/Advanced-LangChain-with-FastAPI)
+
+
+
+
