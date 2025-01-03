@@ -20,7 +20,7 @@
 
 [Stock market Real time analysis](https://www.youtube.com/watch?v=KerNf0NANMo)
 
-[
+
 
 
 # MySQL
