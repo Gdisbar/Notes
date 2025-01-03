@@ -49,5 +49,5 @@
 
 [MLOps](https://github.com/olonok69/LLM_Notebooks/blob/main/mlflow/mlflow_transformers_fine_tuning.ipynb}
 
-[vLLM](https://github.com/olonok69/LLM_Notebooks/blob/main/LLMOps/vLLM/vllm.ipynb)
+[vLLM] (https://github.com/olonok69/LLM_Notebooks/blob/main/LLMOps/vLLM/vllm.ipynb)
 
