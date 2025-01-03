@@ -16,6 +16,10 @@
 
 ## YouTube
 
+[Pre-train 3B LLM](https://www.youtube.com/watch?v=aPzbR1s1O_8)
+
+[Reproduce GPT-2](https://www.youtube.com/watch?v=l8pRSuU81PU)
+
 [Building Production RAG](https://www.youtube.com/watch?v=dI_TmTW9S4c)
 
 [LangChain vs LangGraph](https://www.youtube.com/watch?v=bvMX-Zlfv68)
@@ -25,8 +29,6 @@
 [Build & Deploy AI ChatBot](https://www.youtube.com/watch?v=KyQKTJhSIak)
 
 [Knowledge Graph](https://www.youtube.com/watch?app=desktop&v=yNCI3DC3tLg)
-
-
 
 
 ## Github
