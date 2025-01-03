@@ -1,12 +1,14 @@
 # Pyspark
 
-https://github.com/subhamkharwal/pyspark-zero-to-hero
+[Pyspark Zero to Hero](https://github.com/subhamkharwal/pyspark-zero-to-hero)
+
+[Pyspark + Databricks](https://www.youtube.com/playlist?app=desktop&list=PLxy0DxWEupiNjGSv1hzRFBXgSzV-bZu94)
 
 # LLD
 
-https://github.com/ashishps1/awesome-low-level-design
+[LLD-short+level](https://github.com/ashishps1/awesome-low-level-design)
 
-https://github.com/imkgarg/Awesome-Software-Engineering-Interview/blob/master/LowLevelDesign.md
+[LLD-complete](https://github.com/imkgarg/Awesome-Software-Engineering-Interview/blob/master/LowLevelDesign.md)
 
 ## Kafka
 
