@@ -14,6 +14,8 @@
 
 [Quantization](https://newsletter.maartengrootendorst.com/p/which-quantization-method-is-right)
 
+[Evaluation metrics - RAG & Fine-Tuning](https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation#faithfulness)
+
 ## YouTube
 
 [Pre-train 3B LLM](https://www.youtube.com/watch?v=aPzbR1s1O_8)
