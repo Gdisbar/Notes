@@ -2,11 +2,15 @@
 
 [Illustrated Transformer](https://news.ycombinator.com/item?id=35712334)
 
+[Transformers](https://deeprevision.github.io/posts/001-transformer/#transformer-current-challenges-and-future-directions)
+
 [Adapter based fine tuning](https://magazine.sebastianraschka.com/p/finetuning-llms-with-adapters)	
 
 [Adapter based fine tuning 2](https://smashinggradient.com/2023/04/11/summary-of-adapter-based-performance-efficient-fine-tuning-peft-techniques-for-large-language-models/)	
 
 [Understanding LLM](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
+
+[Self-Supervised Learning](https://neptune.ai/blog/self-supervised-learning#:~:text=Self%2Dsupervised%20learning%20is%20a,by%20auto%2Dgenerating%20the%20labels.)
 
 [RHLF & it's alternate](https://magazine.sebastianraschka.com/p/llm-training-rlhf-and-its-alternatives)
 
