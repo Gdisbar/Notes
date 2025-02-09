@@ -33,6 +33,15 @@ import os
 # Defined in the secrets tab in Google Colab
 os.environ["HF_TOKEN"] = userdata.get('HF_TOKEN')
 
+from huggingface_hub import login
+
+HF_USERNAME = ""
+HF_TOKEN = ""
+
+try:
+  login(token=HF_TOKEN)
+except ValueError:
+  login(username=HF_USERNAME, token=HF_TOKEN)
 
 !pip install -q colab-xterm
 %load_ext colabxterm
