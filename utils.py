@@ -43,6 +43,25 @@ try:
 except ValueError:
   login(username=HF_USERNAME, token=HF_TOKEN)
 
+
+from huggingface_hub import HfApi
+
+username = "pritam3355"
+MODEL_NAME = quant_path = "Mistral-7B-AWQ-4bit"
+
+api = HfApi(token=hf_tokens)
+
+api.create_repo(
+    repo_id = f"{username}/{MODEL_NAME}",
+    repo_type="model"
+)
+
+api.upload_folder(
+    repo_id = f"{username}/{MODEL_NAME}",
+    folder_path = "/kaggle/working/Mistral-7B-AWQ-4bit"
+)
+
+
 !pip install -q colab-xterm
 %load_ext colabxterm
 
