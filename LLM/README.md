@@ -18,6 +18,8 @@
 
 [Evaluation metrics - RAG & Fine-Tuning](https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation#faithfulness)
 
+[Trelis Research](https://github.com/TrelisResearch/install-guides?tab=readme-ov-file)
+
 ## YouTube
 
 [Pre-train 3B LLM](https://www.youtube.com/watch?v=aPzbR1s1O_8)
@@ -35,23 +37,25 @@
 [Knowledge Graph](https://www.youtube.com/watch?app=desktop&v=yNCI3DC3tLg)
 
 
-## Github
+## Github - LLM+GenAI
 
 [LLM fine tuning](https://github.com/rasbt/LLM-finetuning-scripts/tree/main)	
 
-[LLM from scratch](https://github.com/rasbt/LLMs-from-scratch)	
-
 [LLM+GenAI](https://github.com/Vasanthengineer4949/NLP-Projects-NHV)
-
-[llama3 from scratch](https://github.com/naklecha/llama3-from-scratch)
-
-[Adapter learning](https://github.com/calpt/awesome-adapter-resources)
-
-[Prompt Engineering](https://github.com/PromtEngineer/YoutTube-Tutorial)		
 
 [LLM+GenAI](https://github.com/sunnysavita10/Generative-AI-Indepth-Basic-to-Advance)
 
+# LLM from scratch
+
+[llama3 from scratch](https://github.com/naklecha/llama3-from-scratch)
+
+[LLM from scratch](https://github.com/rasbt/LLMs-from-scratch)	
+
+# LangChain,MLOps
+
 [LangChain-FastAPI](https://github.com/Coding-Crashkurse/Advanced-LangChain-with-FastAPI)
+
+[MLOps](https://github.com/olonok69/LLM_Notebooks/blob/main/mlflow/mlflow_transformers_fine_tuning.ipynb)
 
 
 # TPU training
@@ -75,19 +79,13 @@
 
 [Fine-tune FLAN-T5 with PPO](https://www.kaggle.com/code/paultimothymooney/fine-tune-flan-t5-with-ppo-deeplearning-ai)
 
-# Training Small Language Model,MLOps
+# Training for custom application 
 
 [Training Small Language Model](https://github.com/AIAnytime/Training-Small-Language-Model/blob/main/Training_a_Small_Language_Model.ipynb)
 
-[Trelis Research](https://github.com/TrelisResearch/install-guides?tab=readme-ov-file)
-
-[MLOps](https://github.com/olonok69/LLM_Notebooks/blob/main/mlflow/mlflow_transformers_fine_tuning.ipynb)
-
-
-# Applications
+[Multi-label classification](https://www.kaggle.com/code/owaiskhan9654/multi-label-classification-of-pubmed-articles#-Training-the-model)
 
 [Prompt Prediction - Miztral,Gemma,Llama](https://www.kaggle.com/code/aatiffraz/prompt-prediction-w-mixtral-mistral7b-gemma-llama)
-
 
 [Code Interpreter Baseline](https://www.kaggle.com/code/huikang/code-interpreter-baseline)
 
