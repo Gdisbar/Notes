@@ -4,13 +4,7 @@
 
 [Transformers](https://deeprevision.github.io/posts/001-transformer/#transformer-current-challenges-and-future-directions)
 
-[Adapter based fine tuning](https://magazine.sebastianraschka.com/p/finetuning-llms-with-adapters)	
-
-[Adapter based fine tuning 2](https://smashinggradient.com/2023/04/11/summary-of-adapter-based-performance-efficient-fine-tuning-peft-techniques-for-large-language-models/)	
-
 [Understanding LLM](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
-
-[RHLF & it's alternate](https://magazine.sebastianraschka.com/p/llm-training-rlhf-and-its-alternatives)
 
 [LangChain](https://blog.futuresmart.ai/building-a-production-ready-rag-chatbot-with-fastapi-and-langchain)
 
