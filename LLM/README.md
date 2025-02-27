@@ -69,6 +69,12 @@
 
 [Gemma-2 9b 4-bit QLoRA fine-tuning](https://www.kaggle.com/code/emiz6413/training-gemma-2-9b-4-bit-qlora-fine-tuning)
 
+# Fine-Tuning - deeplearning.ai
+
+[Fine-tune FLAN-T5 with PEFT/LoRA](https://www.kaggle.com/code/paultimothymooney/fine-tune-flan-t5-with-peft-lora-deeplearning-ai)
+
+[Fine-tune FLAN-T5 with PPO](https://www.kaggle.com/code/paultimothymooney/fine-tune-flan-t5-with-ppo-deeplearning-ai)
+
 # Training Small Language Model,MLOps
 
 [Training Small Language Model](https://github.com/AIAnytime/Training-Small-Language-Model/blob/main/Training_a_Small_Language_Model.ipynb)
