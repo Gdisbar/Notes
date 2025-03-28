@@ -8,8 +8,6 @@
 
 [LangChain](https://blog.futuresmart.ai/building-a-production-ready-rag-chatbot-with-fastapi-and-langchain)
 
-[Quantization](https://newsletter.maartengrootendorst.com/p/which-quantization-method-is-right)
-
 [Evaluation metrics - RAG & Fine-Tuning](https://www.confident-ai.com/blog/llm-evaluation-metrics-everything-you-need-for-llm-evaluation#faithfulness)
 
 [Trelis Research](https://github.com/TrelisResearch/install-guides?tab=readme-ov-file)
