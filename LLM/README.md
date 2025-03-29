@@ -67,8 +67,6 @@
 
 # Fine-Tuning - deeplearning.ai
 
-[Fine-tune FLAN-T5 with PEFT/LoRA](https://www.kaggle.com/code/paultimothymooney/fine-tune-flan-t5-with-peft-lora-deeplearning-ai)
-
 [Fine-tune FLAN-T5 with PPO](https://www.kaggle.com/code/paultimothymooney/fine-tune-flan-t5-with-ppo-deeplearning-ai)
 
 # Training for custom application 
