@@ -31,8 +31,6 @@
 
 ## Github - LLM+GenAI
 
-[Adapter Tuning](https://github.com/rasbt/LLM-finetuning-scripts/tree/main/adapter/distilbert-movie-review)	
-
 [LLM+GenAI](https://github.com/Vasanthengineer4949/NLP-Projects-NHV)
 
 [LLM+GenAI](https://github.com/sunnysavita10/Generative-AI-Indepth-Basic-to-Advance)
