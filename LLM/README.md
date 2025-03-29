@@ -31,7 +31,7 @@
 
 ## Github - LLM+GenAI
 
-[LLM fine tuning](https://github.com/rasbt/LLM-finetuning-scripts/tree/main)	
+[Adapter Tuning](https://github.com/rasbt/LLM-finetuning-scripts/tree/main/adapter)	
 
 [LLM+GenAI](https://github.com/Vasanthengineer4949/NLP-Projects-NHV)
 
