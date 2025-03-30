@@ -28,6 +28,8 @@
 
 [Knowledge Graph](https://www.youtube.com/watch?app=desktop&v=yNCI3DC3tLg)
 
+[RLHF - DPO](https://www.youtube.com/watch?app=desktop&v=aI8cyr-gH6M)
+
 
 ## Github - LLM+GenAI
 
