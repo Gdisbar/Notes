@@ -39,6 +39,9 @@
 
 [LLM+GenAI](https://github.com/sunnysavita10/Generative-AI-Indepth-Basic-to-Advance)
 
+## Github - AWS+GenAI
+[GenAI+AWS](https://github.com/aws-samples/generative-ai-on-aws-immersion-day)
+
 # LLM from scratch
 
 [llama3 from scratch](https://github.com/naklecha/llama3-from-scratch)
