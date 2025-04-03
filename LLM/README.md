@@ -30,6 +30,8 @@
 
 [RLHF - DPO](https://www.youtube.com/watch?app=desktop&v=aI8cyr-gH6M)
 
+[AWS Sagemaker Deployment](https://www.youtube.com/watch?v=U72q95dHpRo)
+
 
 ## Github - LLM+GenAI
 
