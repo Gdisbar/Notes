@@ -1,3 +1,0 @@
-# Pinecone
-# RAG Architecture
-# LlamaIndex
