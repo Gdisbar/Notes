@@ -1,0 +1,10 @@
+llama-index
+llama-index-embeddings-openai
+llama-index-vector-stores-pinecone
+psycopg2-binary
+redis
+pinecone-client
+openai
+pydantic
+pytest
+pytest-asyncio
