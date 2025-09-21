@@ -4,6 +4,8 @@
 
 [Transformers](https://deeprevision.github.io/posts/001-transformer/#transformer-current-challenges-and-future-directions)
 
+[Transformers](https://aigents.co/data-science-blog/publication/the-transformers-architecture-in-detail-whats-the-magic-behind-llms)
+
 [Understanding LLM](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
 
 [LangChain](https://blog.futuresmart.ai/building-a-production-ready-rag-chatbot-with-fastapi-and-langchain)
