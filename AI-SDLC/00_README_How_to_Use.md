@@ -1,71 +1,65 @@
-# AI-Augmented SDLC (SEZG534) — EC3 Study Notes
+# EC3 Revision Notes — AI-Augmented SDLC (SEZG534)
 
-**Prepared for:** Comprehensive Exam (EC3), BITS WILP — used as closed-book preparation notes
-**Sources:** Course handout (8 modules), CS9 Requirements & Design deck, CS14 Software Delivery Metrics deck, Lab Sheet 2 (Coding Agent Harness), Sample Questions paper, plus your 16-question analysis bank (expanded to 49 questions with model answers).
+**Scope (strict):** These notes are built **only** from the course files you supplied for sessions 8–14:
 
----
-
-## 1. What is in this pack
-
-| File | Contents | Use it for |
+| Source file | What it covers | Where it lands in the notes |
 |---|---|---|
-| `01_Concept_Notes.md` | Part A: all 8 modules, one concept per section, each ending with an exam-ready skeleton; Part B: 8 memorizable text flows | Building understanding + memorizing answer skeletons |
-| `02_Question_Bank.md` | 49 questions in your 6 categories, all with full model answers | Practising reproduction of answers under time pressure |
-| `03_Last_Day_Cheat_Sheet.md` | Definitions, mnemonics, formulas, number anchors, dispatch table | Final 24 hours before the exam |
-| `EC3_All_In_One.md` | Everything above in one file | Searching across the whole pack |
+| `Merged_Presentation_2026-11-15.pptx` | CS8 AI-Native SDLC, CS9 Spec-Driven Development, CS10 Design & Architecture, CS11 Coding (two decks), CS13 Software Testing, CS14 Software Delivery Metrics | `01_Concept_Notes.md` Parts I–VI |
+| `Spec_Driven_Development_GitHub_Spec_Kit_Lab_Sheet.pdf` (Lab 1) | SDD hands-on with GitHub Spec Kit in VS Code | `01_Concept_Notes.md` Part VII |
+| `Coding Agent_Harness_Lab_Sheet.pdf` (Lab 2) | Feedforward/feedback harness for coding agents | `01_Concept_Notes.md` Part VII + question bank case studies |
+| Your 16-question analysis | Question **pattern** only (6 categories) | `02_Question_Bank.md` — every question re-grounded in the files above |
 
----
+Nothing from sessions 1–7 (SDLC evolution history, AI/ML fundamentals, prompting theory, RAG internals, DevOps basics, etc.) is included. Where a sample question touched an out-of-scope topic (e.g., "foundation models and transformer architecture"), the question was **rewritten to the same pattern using only in-scope content** (e.g., non-determinism and context windows), and the mapping index at the end of the question bank shows exactly what happened to each of your 16 questions.
 
-## 2. Your question-pattern analysis → where it is covered
+## Files
 
-| Question category (your analysis) | What examiners ask | Covered in |
-|---|---|---|
-| Conceptual / descriptive | SDLC evolution, AI fundamentals, prompting | QBank Category A; Modules 1–2 |
-| Scenario-based application | Apply AI tools to a given SDLC scenario | QBank Category B; Modules 3–6 scenarios |
-| Compare and justify | Compare AI workflows, tools, validation strategies | QBank Category C; comparison tables in every module |
-| Diagram / workflow | AI-augmented SDLC workflow, HITL, CI/CD | QBank Category D; Part B flows (arrow notation only) |
-| Critical analysis | Governance, hallucinations, circular validation | QBank Category E; Modules 5, 7, 8 |
-| Case-study based | Legacy modernization, AI-assisted development labs | QBank Category F; Module 4 + Lab Sheet 2 section |
-
-**Pattern insight from the sample paper:** every question is a short scenario (4–6 lines) followed by 2–3 directive verbs (Evaluate / Analyze / Explain / Identify), each worth ~3 marks. Your answers must therefore: (1) name the concept, (2) define it in one line, (3) apply it to the scenario's specifics, (4) give one example or number. Three sentences per mark is a safe density.
-
----
-
-## 3. Closed-book strategy (because you are effectively writing it closed-book)
-
-1. **Memorize skeletons, not paragraphs.** Every concept section in `01_Concept_Notes.md` ends with an "Exam skeleton" — a numbered list of 5–8 memory points. In the exam, reproduce the skeleton first, then expand each point into 2–3 sentences.
-2. **Memorize numbers as anchors.** Numbers make answers concrete and are hard to invent under pressure: 4 DORA metrics + rework rate, 5 pillars of the Developer AI Impact Framework, 2 generation attempts in the harness, 30/90-day code turnover windows, 3 J-curve forces, temperature 0.1 in the live harness. Full list in the cheat sheet.
-3. **Memorize one comparison table per module.** Compare-and-justify questions are almost guaranteed (your pattern analysis says so). Each module has one master table; if you can reproduce the table you can answer any comparison question.
-4. **Diagrams: write flows, do not draw.** Per your instruction, all diagrams are text-only arrow flows (A → B → C). In the exam, write the flow on one line, then describe each stage in words. That earns diagram-question marks without drawing.
-5. **Practise the 3-mark rhythm.** Sample paper parts are ~3 marks each: definition (1) + application to scenario (1) + example/justification (1). Practise writing 120–180 word answers against the clock.
-6. **Use the dispatch table** (cheat sheet, last section): "If the question says X → open with Y." It is your fastest route into any answer when the clock starts.
-
----
-
-## 4. Suggested 10-day revision plan
-
-| Days | Task |
+| File | Use it for |
 |---|---|
-| 1–2 | Modules 1–2 concept notes + QBank A |
-| 3–4 | Modules 3–4 + QBank B1–B5, C1–C3 |
-| 5 | Modules 5–6 + QBank E1–E3, D2 |
-| 6 | Modules 7–8 + QBank E4–E8, C4–C7 |
-| 7 | Part B flows + QBank D (all workflow questions) |
-| 8 | QBank F case studies + Lab Sheet 2 concepts |
-| 9 | Attempt 6 random questions from the bank, closed-book, timed (25 min each) |
-| 10 | Cheat sheet only; rewrite all skeletons from memory once |
+| `01_Concept_Notes.md` | First pass. 7 parts, every concept with a definition, mechanism, and an **Exam skeleton** you must be able to reproduce from memory. |
+| `02_Question_Bank.md` | Second pass. 45 questions in 6 categories (A–F), each with a full model answer. Write answers by hand before reading the model. |
+| `03_Last_Day_Cheat_Sheet.md` | Day-before and morning-of. One-liners, mnemonics, formulas, number anchors, dispatch table. |
+| `EC3_All_In_One.md` | Single file with everything, for search/phone. Do not study from it linearly. |
 
----
+## Closed-book strategy (even though it is nominally open-book)
 
-## 5. Syllabus coverage check (against the course handout)
+1. **Skeleton-first, not prose-first.** Every concept ends with a 5–8 line skeleton. If you can reproduce the skeleton from memory, you can rebuild the paragraph around it in the exam. Prose is decoration; the skeleton is the answer.
+2. **Active recall loops.** For each part: read once → close notes → write the skeleton → check → mark misses. A miss gets a red star; red-starred skeletons are your day-before list.
+3. **Question-bank discipline.** Do not read model answers first. Attempt, then compare, then note which skeleton lines you missed. 45 questions × ~10 minutes each ≈ 8 sessions.
+4. **Anchor on numbers and named artifacts.** Examiners reward specifics: "15–20% churn acceptable", "max 2 repair attempts", "Wave 1 = no dependencies", "`requirements.md / design.md / tasks.md`". The cheat sheet collects every number once.
+5. **Flows as text arrows.** Every workflow answer must be written as `A → B → C` first, then explained line by line. Practise redrawing the six master flows: bottleneck shift, Spec Kit command chain, harness loop (Lab 2), cybernetic loop (SEI), circular-vs-independent validation, operations feedback loop.
 
-- Module 1 (Evolution, velocity, risk, economics) — Sections 1.1–1.6, QBank A1, B1, B8, E4, E5
-- Module 2 (AI fundamentals, prompting, agents) — Sections 2.1–2.7, QBank A2–A7, B4, B10
-- Module 3 (Requirements, SDD, ADRs, threat modeling) — Sections 3.1–3.9, QBank B2, B3, B9, B11, C2, C3, D7, F7
-- Module 4 (Coding, refactoring, guardrails) — Sections 4.1–4.6, QBank A8, B10, C1, C5, D6, E6, F1–F4
-- Module 5 (Testing, QA, circular validation) — Sections 5.1–5.6, QBank E1, E3, C6, C7, F2
-- Module 6 (CI/CD, release) — Sections 6.1–6.5, QBank D2, D5, B7
-- Module 7 (Governance, HITL, liability) — Sections 7.1–7.4, QBank E2, D5, F3
-- Module 8 (Feedback loops, metrics, health) — Sections 8.1–8.7, QBank B5, B6, C4, D3, E5, E8, F6
-- Lab Sheet 2 harness — Part A sections 2.5, 4.5, 4.6 + Flows F3/F4 + QBank D4, F2, E7
-- Sample paper questions — QBank E4 (Q1) and B8 (Q2)
+## Ten-day plan (≈ 3 h/day; compress to 6 days at 5 h if needed)
+
+| Day | Work | Output you must be able to do |
+|---|---|---|
+| 1 | Part I–II (CS8+CS9) | Draw spec spectrum; list 9 Spec Kit commands in order; 4 SDD risks + mitigations |
+| 2 | Part III (CS10) | Deep vs shallow, sink vs pipe, harness vs orchestrator, 3-layer governance — from memory |
+| 3 | Part IV first half (CS11: patterns, guardrails, Lattice) | 5 patterns + failure modes; 4 guardrail types; I-C-O layers |
+| 4 | Part IV second half (CS11: SEI, non-determinism, review) | Cybernetic loop; actual vs apparent; P-E-C-E → E-C-E; 8 review steps |
+| 5 | Part V (CS13) | 6 testing uses; churn & complexity numbers; circular validation remedies; agent-testing triad |
+| 6 | Part VI (CS14) | DORA 4 + status under AI; hierarchy A-E-P-Q-B; 5 pillars; ROI + J-curve formulas |
+| 7 | Part VII (Labs) | Lab 1 artifact chain; Lab 2 feedforward files, sensor order, bounded repair; verification matrix |
+| 8 | Question bank categories A, B (22 Qs) | Attempt 11, mark misses |
+| 9 | Question bank categories C, D, E, F (23 Qs) | Attempt all; redraw every flow by hand |
+| 10 | Cheat sheet + red-star skeletons + 5 hardest questions re-attempted | Recite all 50 one-liners |
+
+## Question-category → study-section map
+
+| Category (your pattern) | Weight in bank | Primary sections |
+|---|---|---|
+| A. Conceptual / descriptive | 12 Qs | Parts I–VII (all skeletons) |
+| B. Scenario-based application | 10 Qs | Part I–II (requirements), IV (guardrails/patterns), V (testing), VI (metrics), Lab 2 |
+| C. Compare and justify | 7 Qs | Spec spectrum (II), deep/shallow + sink/pipe + harness/orchestrator (III), testing comparisons (V), frameworks (VI) |
+| D. Diagram / workflow | 6 Qs | Bottleneck shift (I), Spec Kit chain (II), validation loop (V), harness loop (VII) |
+| E. Critical analysis | 5 Qs | Governance (III–IV), SDD critique (II), DORA critique + J-curve (VI) |
+| F. Case-study / lab | 5 Qs | Lab 1 (VII), Lab 2 (VII), SEI case (IV), Uber case (V) |
+
+## Exam answer template (works for every category)
+
+1. **Define** (1–2 lines, exact terms from the notes).
+2. **Flow** (the `A → B → C` arrow line for whatever is asked).
+3. **Mechanism** (3–5 numbered points, one named artifact or number each).
+4. **Risk / trade-off** (2–3 failure modes with the named guardrail or metric that controls them).
+5. **Verdict / recommendation** (one sentence that answers the exact verb in the question: recommend, justify, critique).
+
+If a question says "compare", write a two-column mini-table in the answer script; if it says "design", the flow line comes before any prose.
