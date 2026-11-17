@@ -1,4 +1,4 @@
-# Software Architectures (SE ZG651 / SS ZG653) — EC3 Closed-Book Revision Notes
+# Software Architectures (SE ZG651 / SS ZG653) — EC3 Closed-Book Revision Notes - 2
 
 > Built from: course handout, lecture decks (CS01–CS16), Mid-Sem answer keys (Set 1 & 2) and your question bank.
 > Exam style (your analysis): **Conceptual · Scenario/design · Compare & justify · Text diagrams · Critical analysis (ATAM/trade-offs) · Case studies.**
