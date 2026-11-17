@@ -231,7 +231,7 @@ Mitigation table (risk → root cause → practical mitigation):
 | Architectural bloat | LLM tendency toward maximal complexity | Mandate **simplicity rules in constitution.md** (e.g., "prefer single relational tables over new microservices") |
 | Cascading errors | Unchecked transition from `/plan` to `/tasks` | Treat **plan.md as an explicit PR gate** requiring mandatory **senior human review** before running `/tasks` |
 | Spec-to-code drift | Unlinked code changes during `/implement` | Require speckit validation or **CI checks that fail if code commits touch architecture files without updated specs** |
-| Legacy context loss | LLM context limitations | Include **explicit reference files** (schema dumps, OpenAPI contracts) in `.specify/` context during the `/plan` prompt |
+| Legacy context loss - Dependency & API hallucinations | LLM context limitations | Include **explicit reference files** (schema dumps, OpenAPI contracts) in `.specify/` context during the `/plan` prompt |
 
 **Exam skeleton [CS9]**
 - 4 risks: hallucinated deps/APIs; shallow edge/NFR coverage; spec-to-code drift; cascading errors
